@@ -1,0 +1,20 @@
+{
+  "name": "plop.css",
+  "version": "1.0.0",
+  "description": "A classless CSS framwork. Just plop it onto your website!",
+  "main": "css/plop.css",
+  "scripts": {
+    "build": "node-sass --include-path scss scss/plop.scss css/plop.css",
+    "build:watch": "npm run build && node-sass scss/plop.scss -wo css"
+  },
+  "keywords": [
+    "css",
+    "theme",
+    "classless"
+  ],
+  "author": "Thomas Vidas <hello@thomasvidas.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

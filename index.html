@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/plop.css" type="text/css">
+  </head>
+  <body>
+    <h1>Plop.css</h1>
+    <p>
+      <code>Plop.css</code> is a classless CSS file that you can plop into any HTML file and it will <i>(hopefully)</i>
+      make everything look better! Below are some examples of <code>plop.css</code> in action.
+    </p>
+    <h2>Text</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec odio non odio elementum facilisis ac id dolor. Duis non dolor nunc. Integer in sagittis lacus, a vehicula felis. Aliquam et ullamcorper lacus. Proin mattis quis nisi eget efficitur. Sed accumsan mattis mauris, ac pellentesque tortor pharetra nec. Aliquam erat volutpat. Vestibulum finibus pretium quam. Aenean fermentum porta venenatis. Aenean orci neque, interdum fringilla euismod eget, malesuada pharetra sem. Donec tortor risus, placerat in pharetra et, condimentum non tortor. Donec volutpat, metus at cursus pulvinar, odio ipsum faucibus dui, eu ultrices orci ligula id enim.</p>
+    <h2>Tables</h2>
+    <table>
+      <caption>Totally real income chart</caption>
+      <thead>
+        <tr>
+          <td>Month</td>
+          <td>Income</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>$10,000</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$20,000</td>
+        </tr>
+        <tr>
+          <td>March</td>
+          <td>$30,000</td>
+        </tr>
+        <tr>
+          <td>April</td>
+          <td>$40,000</td>
+        </tr>
+        <tr>
+          <td>May</td>
+          <td>$50,000</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr/>
+    <h2>Responsive Images</h2>
+    <img src="https://images.unsplash.com/photo-1554928253-515c5783243a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80">
+    <small>
+      <em>
+        <a href="https://unsplash.com/@mael_bld">@mael_bld</a> on Upslash
+      </em>
+    </small>
+    <figure>
+      <img src="https://images.unsplash.com/photo-1554928253-515c5783243a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80">
+      <figcaption>
+        <a href="https://unsplash.com/@mael_bld">@mael_bld</a> on Upslash
+      </figcaption>
+    </figure>
+    <hr/>
+    <h2>Form Elements (WIP)</h2>
+    <button>Click Me</button>
+    <input type="text" />
+    <input type="checkbox" />
+    <hr/>
+    <h2>Blocks</h2>
+    <blockquote>Fancy Blockquote</blockquote>
+    <q>Or a 'q' quote</q>
+    <pre>How about preformatted text?</pre>
+
+
+    <!-- Never try this at home kids, this is for demo only -->
+    <button id="off-btn" onclick="clicker()" style="position: fixed; top: 0; right: 0; border-radius: 0; background-color: black; color: white">
+      Toggle plop.css
+    </button>
+    <script>
+      var styleSheets = document.styleSheets;;
+      var isPlopOn = true;
+      var clicker = function() {
+        if (isPlopOn) {
+          for(var x = 0; x < document.styleSheets.length; x++) {
+            document.styleSheets[x].disabled = true;
+          }
+          isPlopOn = false;
+        } else {
+          for(var x = 0; x < document.styleSheets.length; x++) {
+            document.styleSheets[x].disabled = false;
+          }
+          isPlopOn = true;
+        }
+      }
+    </script>
+  </body>
+</html>

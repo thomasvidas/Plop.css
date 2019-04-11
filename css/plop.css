@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Oxygen+Mono|Oxygen:400,700";
+body {
+  max-width: 40rem;
+  margin: auto;
+  padding: 2rem;
+  line-height: 1.5rem; }
+
+a, abbr, address, article, aside, b, body, blockquote, button,
+cite, td, data, div, em, figure, figcaption, form,
+footer, header, i, ins, label, li, main, nav, select, option,
+output, p, param, q, s, section, small, span, strong, sub,
+template, textarea, thead, tfoot, time, u {
+  font-family: 'Oxygen', sans-serif;
+  color: #202020; }
+
+h1, h2, h3, h4, h5, h6, th, caption {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #202020; }
+
+h1 {
+  font-size: 6rem;
+  line-height: 6rem; }
+
+h2 {
+  font-size: 4rem;
+  line-height: 4rem; }
+
+h3 {
+  font-size: 3rem;
+  line-height: 3rem; }
+
+h4 {
+  font-size: 2.5rem;
+  line-height: 2.5rem; }
+
+h5 {
+  font-size: 2rem;
+  line-height: 2rem; }
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.5rem; }
+
+article, aside, blockquote, div, figure, form, footer, header,
+main, p, textarea, q {
+  display: block;
+  margin: 3rem 0; }
+
+pre, code {
+  font-family: 'Oxygen-Mono', monospace; }
+
+code {
+  border: 1px solid #F3F3F3;
+  border-radius: 4px;
+  background: #F3F3F3;
+  color: #6ED3A6; }
+
+pre {
+  background-color: #8F8073;
+  color: white;
+  padding-block-start: 1em;
+  padding-block-end: 1em;
+  padding-inline-start: 40px;
+  padding-inline-end: 40px; }
+
+span {
+  color: #6ED3A6; }
+
+mark {
+  background-color: #6ED3A6; }
+
+a {
+  color: #6ED3A6;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+blockquote, q {
+  display: block;
+  font-style: italic;
+  background-color: #F3F3F3;
+  border-left: 3px #6ED3A6 solid;
+  padding-block-start: 1em;
+  padding-block-end: 1em;
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+  margin: 3rem 0; }
+  blockquote::before, q::before {
+    content: '"'; }
+  blockquote::after, q::after {
+    content: '"'; }
+
+table {
+  margin: 1rem 0;
+  width: 100%;
+  border-collapse: collapse; }
+  table caption {
+    font-style: italic; }
+  table tr {
+    line-height: 2rem; }
+  table td {
+    text-align: center; }
+  table thead {
+    line-height: 1.5rem;
+    border-bottom: 1px solid #6ED3A6; }
+  table tbody tr:nth-child(2n - 1) {
+    background-color: rgba(110, 211, 166, 0.2); }
+    table tbody tr:nth-child(2n - 1) td:hover {
+      background-color: rgba(71, 199, 142, 0.2); }
+  table tbody tr:nth-child(2n) td:hover {
+    background-color: rgba(204, 204, 204, 0.2); }
+
+img {
+  margin: auto;
+  max-width: 100%; }
+
+figure {
+  border: 1px solid #6ED3A6;
+  background-color: #F3F3F3;
+  padding-block-start: 1em;
+  padding-block-end: 1em;
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+  margin: 3rem 0; }
+  figure figcaption {
+    text-align: right;
+    font-style: italic;
+    font-size: 0.75rem; }
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #6ED3A6;
+  margin: 3rem 0; }
+
+progress {
+  color: #6ED3A6;
+  background: #6ED3A6;
+  line-height: 1rem;
+  height: 0.5rem;
+  vertical-align: middle; }
+
+progress::-moz-progress-bar {
+  background: #6ED3A6; }
+
+progress::-webkit-progress-value {
+  background: #6ED3A6; }
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #6ED3A6;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  padding: 0.5rem 1rem; }
+  button:focus {
+    outline: none; }
+  button:hover {
+    background-color: #47c78e; }
+  button:active {
+    outline: none;
+    background-color: #33a874; }
+
+textarea {
+  width: 100%;
+  font-size: 1rem; }
+
+input {
+  border-radius: 4px;
+  border: 1px solid #8F8073;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem; }
+  input:focus {
+    outline: none;
+    border: 1px solid #6ED3A6; }
+
+input[type="checkbox"] {
+  position: relative; }
+  input[type="checkbox"]:checked {
+    background-color: #6ED3A6; }
+    input[type="checkbox"]:checked::before {
+      background-color: #6ED3A6; }
+    input[type="checkbox"]:checked::after {
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      content: '✓';
+      color: white; }
+  input[type="checkbox"]::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border: 1px solid #8F8073;
+    border-radius: 4px;
+    position: absolute; }
+  input[type="checkbox"]:hover ::before {
+    border: 1px solid #6ED3A6; }
