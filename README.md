@@ -9,5 +9,10 @@ Grab the current `css/plop.css` file in and link it at the top of your html file
 <link rel="stylesheet" href="css/plop.css" type="text/css">
 ```
 
+Alternatively you can install with npm
+```
+npm install plop.css
+```
+
 ## License
 MIT licensed
